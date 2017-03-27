@@ -1,0 +1,10 @@
+#!/bin/bash
+
+folder=$1
+where=$2
+
+echo $folder
+
+# project folder
+cat $folder/output.csv
+

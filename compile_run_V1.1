@@ -1,0 +1,80 @@
+#!/bin/bash
+
+folder=$1
+where=$2
+mutant=`ls $folder"/mutants"`
+
+echo $folder
+echo $mutant
+
+
+# project folder	
+cd $folder
+
+# modify build file to compile tests
+#../../build_for_compile_V1.4 .
+
+# compile tests using ant
+ant clean
+ant compile
+ant compile-evosuite
+
+mkdir output
+
+# mutant# = `ls -l mutants | grep ^d | wc -l`
+
+
+echo "******************************"
+
+for mut in $mutant; do
+	
+	# search mutant (java file) in each folder
+	mut_file_path=`find ."/mutants/"$mut -name '*.java'`
+
+	# extract only mut_file name from complete path
+	mut_file=`basename $mut_file_path`
+	
+	# search similar project file
+	proj_file_path=`find ."/src" -name $mut_file`
+
+	# extract only proj_file name from complete path
+	proj_file=`basename $proj_file_path`
+
+	# create backup of proj_file by moving it to project folder
+	mv $proj_file_path .
+
+	# move mutant to that file's path
+	cp $mut_file_path $proj_file_path
+
+	# modify build file to compile tests
+	#../../build_for_compile_V1.1 ../$folder
+
+	# compile project again and run the tests on project files
+	ant clean
+	ant compile
+	ant compile-evosuite
+	ant evosuite-test >> ./output/output$mut.txt
+
+	# move mutant file back to its location
+	rm $mut_file_path
+
+	# move original proj_file to its previous location
+	mv ."/"$proj_file $proj_file_path
+
+	#echo "^^^^^^^^^^^^^^^^^^^^^^^^^"
+#	echo $mut_file
+	#echo "--------------------------"
+	#echo $proj_file
+	#echo "**************************"
+
+done
+
+
+
+	echo "^^^^^^^^^^^^^^^^^^^^^^^^^"
+	echo $mut_file
+	echo "--------------------------"
+	echo $proj_file
+	echo "**************************"
+
+cd $where

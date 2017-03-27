@@ -1,0 +1,89 @@
+#!/bin/bash
+
+folder=$1
+where=$2
+output=`ls $folder"/output"`
+search_budget=$3
+fitnessFunc=$4
+suite_no=$5
+
+echo $folder
+
+# project folder	
+cd $folder"/output"
+
+# count total no. of tests
+java_file=`find .."/evosuite-tests" -name '*.java'`
+	
+for jf in $java_file; do     
+#	echo $jf
+	tests_in_current_file=`cat $jf | grep '@Test' | wc -l`
+	total_test=`expr $total_test + $tests_in_current_file`;	
+done
+
+echo "******************************"
+
+# find the summary of tests
+for file in $output; do
+
+	mut=`echo $file | grep -o -E '[0-9]+'`;
+	
+	cat $file | awk -v tot_tests=$total_test -v mut_no=$mut -v budget=$search_budget -v fitness_func=$fitnessFunc -v project=`pwd | awk -F'/' '{print $6}'` -v suite_id=$suite_no '
+	   BEGIN {
+		OFS=","
+		tests_run=0
+		tot_fail=0
+		tot_errors=0
+		tot_skip=0
+	   }
+	   /Tests run/{
+		   split($0,parts,",");
+		   for(part in parts){
+			if (parts[part] ~ /run/) {
+				split(parts[part],words,":");
+				tests_run=(tests_run+words[2]);
+			}
+			
+		   }
+	   }
+	   /Failures/{
+		   split($0,parts,",");
+		   for(part in parts){
+			if (parts[part] ~ /Failures/) {
+				split(parts[part],words,":");
+				tot_fail=(tot_fail+words[2]);
+			}
+			
+		   }
+	   }
+	   /Errors/{
+		   split($0,parts,",");
+		   for(part in parts){
+			if (parts[part] ~ /Errors/) {
+				split(parts[part],words,":");
+				tot_errors=(tot_errors+words[2]);
+			}
+			
+		   }
+	   }
+	   /Skipped/{
+		   split($0,parts,",");
+		   for(part in parts){
+			if (parts[part] ~ /Skipped/) {
+				split(parts[part],words,":");
+				tot_skip=(tot_skip+words[2]);
+			}
+			
+		   }
+	   }
+	   END {
+		  
+		  print project,budget,fitness_func,suite_id,mut_no,tot_tests,(tests_run/2),(tot_fail/2),(tot_errors/2),(tot_skip/2),((tot_fail+tot_errors)/2);
+		  
+	   }
+	' >> ../output.csv
+
+done
+
+cd $where
+

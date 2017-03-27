@@ -1,0 +1,85 @@
+#!/bin/bash
+
+where=$PWD
+folder=`ls $1 | grep -v '^lib' | grep -v '^backup'`
+libFolder=$where/$1/lib
+budgets="120 600"
+fitnessFunctions="branch cbranch exception line method methodnoexception output weakmutation"
+
+# For each project folder
+for f in $folder; do
+
+     # For each directory
+     if [ -d $1"/"$f ]; then
+
+         echo $f
+         #cd $1"/"$f
+
+	mkdir $1/$f/test_suites
+
+	 # Change java version to 7 for mutant generation (input 1)
+	 sudo update-alternatives --set java /usr/lib/jvm/java-7-oracle/jre/bin/java
+	 # Generate mutants
+	 ./script $where $1/$f
+
+	 # Change java version to 8 for test suite generation (input 0)
+	 sudo update-alternatives --set java /usr/lib/jvm/java-8-oracle/jre/bin/java
+
+	 # For each fitness function
+	 for fitness_fun in $fitnessFunctions; do
+		echo $fitness_fun
+		# For each search budget
+		for sb in $budgets; do
+		        echo "-"$sb
+			# Creating test folder to move all tests generated as per ff nad sb
+			if [ ! -d $1/$f/test_suites/$fitness_fun"_"$sb ]; then
+				mkdir $1/$f/test_suites/$fitness_fun"_"$sb
+			fi
+
+			# Genearting 10 test suites for each ff and sb
+			for i in `seq 1 10`; do
+				echo "--"$i
+				# Generate tests
+				./generate_tests $1/$f $where $libFolder $fitness_fun $sb
+
+				# Move generated tests to proper test folder
+				mv $where/$1/$f/evosuite-tests/* $where/$1/$f/test_suites/$fitness_fun"_"$sb/$i/
+			done
+		done
+
+		# Get all ff-sb combination folders from test folder
+		fitfun_sb=`ls $1/$f/test_suites`
+	
+		# For each of the folders of ff-sb combination
+		for ff_sb in $fitfun_sb; do
+			echo $ff_sb
+			# Get all 10 test suites
+			test_suite_no=`ls $1/$f/test_suites/$ff_sb`
+
+			# Extract the sb fro the folder name to send it to create csv script
+			search_budget=`echo $ff_sb | awk -F'_' '{print $2}'`
+
+			# For each test suite
+			for suite_no in $test_suite_no; do
+				echo $suite_no
+				# Remove evosuite-tests folder if exists, to copy tests from test folder properly
+				rm -rf $1/$f/evosuite-tests/*
+
+				# Copy that test suite to evouite-tests folder to compile and run
+				cp -r $1/$f/test_suites/$ff_sb/$suite_no $1/$f/evosuite-tests
+
+	 			# Compile and run tests
+				./compile_run_V1.1 $1/$f $where
+	
+			 	# Create csv for every search budget, fitness func, test suite, mutant
+			 	./create_csv $1/$f $where $search_budget $fitness_fun $suite_no
+				
+			done
+	
+		done
+
+	 done
+
+     fi
+
+done

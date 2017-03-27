@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Main Test Folder
+folder=`ls $1`
+where=$PWD
+
+echo $folder
+
+
+# if exists, delete backup folder
+if [ -a $1"/backup" ]; then
+	# to remove all files in the dir backup without prompt msgs
+	rm -rf $1"/backup"
+	# ls $1
+fi
+
+
+# For each folder (project folder)
+for f in $folder; do
+	# echo "------"$f
+
+	# Create backup folder again to have backups of all projects
+	if [ ! -e $1"/backup" ]; then
+		mkdir $1"/backup"
+	fi
+	
+	# Create project backup for each project folder except backup folder
+	if [ $f != "backup" ]; then
+		cp -r $1"/"$f $1"/backup/"$f"_backup"
+	fi
+done

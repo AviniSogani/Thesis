@@ -1,0 +1,34 @@
+  <path id="evosuite.lib">
+       <fileset dir="${lib.dir}">
+         <include name="**/evosuite*.jar"/>
+      </fileset>
+  </path> 
+
+
+
+
+
+
+
+
+
+  <target name="evosuite-test" depends="compile-tests"
+          description="Run EvoSuite generated tests">
+     <junit printsummary="yes" haltonfailure="no" fork="yes"
+          showoutput="yes">
+        <formatter type="plain" usefile="false" />
+        <classpath>
+           <pathelement path="${build.classes}"/>
+           <pathelement path="${build.evosuite}"/>
+           <path refid="source.lib" />
+           <path refid="test.lib" />
+           <path refid="evosuite.lib"/>
+        </classpath>
+        <batchtest fork="yes">
+           <fileset dir="${evosuite.java}">
+             <include name="**/*.java"/>
+           </fileset>
+        </batchtest>
+     </junit>
+  </target> 
+  

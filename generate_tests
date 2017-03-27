@@ -1,0 +1,41 @@
+#!/bin/bash
+
+folder=$1
+where=$2
+lib=$3
+fitness_func=$4
+budget=$5
+
+echo $folder
+	
+#cd $folder
+
+# remove evosuite-tests folder
+rm -rf $folder/evosuite-tests/*
+rm -rf $folder/evosuite-files/
+
+echo "++++++++++++"
+
+cd $folder
+ant clean
+ant compile
+
+# generate tests
+java -jar $lib/evosuite-1.0.3.jar -target build/classes -projectCP build/classes -criterion $fitness_func -Dsearch_budget=$budget
+cd $where	
+
+echo "---------------------"
+
+# modify build file to compile tests
+./build_for_compile_V1.4 $folder $where
+
+echo "^^^^^^^^^^^^^^^^^^^^^^"
+
+# compile using ant
+cd $folder
+ant clean
+ant compile-evosuite
+cd $where
+
+echo "*********************"
+

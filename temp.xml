@@ -1,0 +1,25 @@
+<property name="mutOp" value=":NONE"/>
+<target name="compile" depends="prepare" description="Compile main code">
+	<mkdir dir="${build.classes}"/>
+	<javac srcdir="${source.java}"
+           destdir="${build.classes}"
+            source="${compile.source}"
+            target="${compile.target}"
+             debug="${compile.debug}"
+       deprecation="${compile.deprecation}"
+          optimize="${compile.optimize}"
+          encoding="${compile.encoding}" 
+    includeantruntime="false"
+	      fork="yes" 
+	executable="/home/avini/Desktop/major/bin/javac">
+	   <compilerarg value="-XMutator${mutOp}"/>
+	   <compilerarg value="-J-Dmajor.export.mutants=true"/>
+	   <compilerarg value="-J-Dmajor.export.directory=./mutants"/>
+
+	<classpath refid="source.lib" />
+	</javac>
+<copy todir="${build.classes}">
+        <fileset dir="${source.java}" excludes="**/*.java"/>
+        <fileset dir="${source.resources}" includes="**"/>
+    </copy>
+</target>

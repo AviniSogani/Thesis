@@ -1,0 +1,63 @@
+#!/bin/bash
+# $1 = where to go back to
+# $2 = where to generate mutants
+
+cd $2
+echo $2
+
+         # If it has an ant script
+         if [ -a "build.xml" ]; then
+		rm "build_backup.xml"
+		mv "build.xml" "build_backup.xml"
+             # Get length of build file
+             cat "build_backup.xml" | awk '
+		BEGIN {
+			printing=1		
+		}
+		/target/ {
+			split($0,parts," ");
+			for(part in parts){
+				if (parts[part] ~ /name/) {
+					split(parts[part],words,"=");
+					if (words[2]=="\"compile\"") {
+						printing=0
+					}	
+				}
+			}
+				
+		}
+		/\/target/ {
+			if(printing==0){
+				printing=1;
+				next;
+			}
+		}
+		/\/project/ {
+			next;
+		} 
+		{
+			if (printing==1) {
+				print $0;
+			}
+		}
+		' >> "build.xml"
+
+             # Add text from new file
+             cat /home/avini/Desktop/temp.xml >> "build.xml"
+             
+	     # Re-add last line
+             echo "</project>" >> "build.xml"
+
+	     # Create MML script
+	     #mmlc ../../major/mml/tutorial.mml "tutorial.mml.bin"
+
+             # Compile
+	     ant clean
+             ant -DmutOp=":ALL" compile
+
+	     # Copy pom.xml from Desktop to project folder
+	     # cp /home/avini/Desktop/pom.xml .
+
+	     #mv "build_backup.xml" "build.xml"
+         fi
+cd $1

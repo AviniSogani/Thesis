@@ -1,0 +1,1256 @@
+Buildfile: /home/avini/Desktop/test/3_gaj/build.xml
+
+prepare:
+
+compile:
+
+compile-tests:
+    [mkdir] Created dir: /home/avini/Desktop/test/3_gaj/build/tests
+    [javac] /home/avini/Desktop/test/3_gaj/build.xml:89: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+evosuite-test:
+    [junit] Running 1.ga.GAAlgorithm_ESTest
+    [junit] Testsuite: 1.ga.GAAlgorithm_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAAlgorithm_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAAlgorithm_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.GAEnumAllelesSet_ESTest
+    [junit] Testsuite: 1.ga.GAEnumAllelesSet_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAEnumAllelesSet_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAEnumAllelesSet_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.GAUtilities_ESTest
+    [junit] Testsuite: 1.ga.GAUtilities_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAUtilities_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAUtilities_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.GAUtilities_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.GAUtilities_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.GAUtilities_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.GAUtilities_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.Genome_ESTest
+    [junit] Testsuite: 1.ga.Genome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.Genome_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.Genome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.Genome_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.Genome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.Genome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.Genome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.Population_ESTest
+    [junit] Testsuite: 1.ga.Population_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.Population_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.Population_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.Population_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.Population_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.Population_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.Population_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.RankSelector_ESTest
+    [junit] Testsuite: 1.ga.RankSelector_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.RankSelector_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.RankSelector_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.RankSelector_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.RankSelector_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.RankSelector_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.RankSelector_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.SectMutator_ESTest
+    [junit] Testsuite: 1.ga.SectMutator_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.SectMutator_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.SectMutator_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.SectMutator_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.SectMutator_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.SectMutator_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.SectMutator_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.UniformCrossover_ESTest
+    [junit] Testsuite: 1.ga.UniformCrossover_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.UniformCrossover_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.UniformCrossover_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.UniformCrossover_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.UniformCrossover_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.VectorAllelesGenome_ESTest
+    [junit] Testsuite: 1.ga.VectorAllelesGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.VectorAllelesGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.VectorAllelesGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.VectorGenome_ESTest
+    [junit] Testsuite: 1.ga.VectorGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.VectorGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 1.ga.VectorGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 1.ga.VectorGenome_ESTest_scaffolding
+    [junit] Testsuite: 1.ga.VectorGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 1.ga.VectorGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 1.ga.VectorGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Buildfile: /home/avini/Desktop/test/3_gaj/build.xml
+
+prepare:
+
+compile:
+
+compile-tests:
+    [mkdir] Created dir: /home/avini/Desktop/test/3_gaj/build/tests
+    [javac] /home/avini/Desktop/test/3_gaj/build.xml:89: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+evosuite-test:
+    [junit] Running 10.ga.GAAlgorithm_ESTest
+    [junit] Testsuite: 10.ga.GAAlgorithm_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAAlgorithm_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAAlgorithm_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.GAEnumAllelesSet_ESTest
+    [junit] Testsuite: 10.ga.GAEnumAllelesSet_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAEnumAllelesSet_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAEnumAllelesSet_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.GAUtilities_ESTest
+    [junit] Testsuite: 10.ga.GAUtilities_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAUtilities_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAUtilities_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.GAUtilities_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.GAUtilities_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.GAUtilities_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.GAUtilities_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.Genome_ESTest
+    [junit] Testsuite: 10.ga.Genome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.Genome_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.Genome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.Genome_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.Genome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.Genome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.Genome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.Population_ESTest
+    [junit] Testsuite: 10.ga.Population_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.Population_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.Population_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.Population_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.Population_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.Population_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.Population_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.RankSelector_ESTest
+    [junit] Testsuite: 10.ga.RankSelector_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.RankSelector_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.RankSelector_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.RankSelector_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.RankSelector_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.RankSelector_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.RankSelector_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.SectMutator_ESTest
+    [junit] Testsuite: 10.ga.SectMutator_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.SectMutator_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.SectMutator_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.SectMutator_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.SectMutator_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.SectMutator_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.SectMutator_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.UniformCrossover_ESTest
+    [junit] Testsuite: 10.ga.UniformCrossover_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.UniformCrossover_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.UniformCrossover_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.UniformCrossover_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.UniformCrossover_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.VectorAllelesGenome_ESTest
+    [junit] Testsuite: 10.ga.VectorAllelesGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.VectorAllelesGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.VectorAllelesGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.VectorGenome_ESTest
+    [junit] Testsuite: 10.ga.VectorGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.VectorGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 10.ga.VectorGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 10.ga.VectorGenome_ESTest_scaffolding
+    [junit] Testsuite: 10.ga.VectorGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 10.ga.VectorGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 10.ga.VectorGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+Buildfile: /home/avini/Desktop/test/3_gaj/build.xml
+
+prepare:
+
+compile:
+
+compile-tests:
+    [mkdir] Created dir: /home/avini/Desktop/test/3_gaj/build/tests
+    [javac] /home/avini/Desktop/test/3_gaj/build.xml:89: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+evosuite-test:
+    [junit] Running 2.ga.GAAlgorithm_ESTest
+    [junit] Testsuite: 2.ga.GAAlgorithm_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAAlgorithm_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAAlgorithm_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.GAEnumAllelesSet_ESTest
+    [junit] Testsuite: 2.ga.GAEnumAllelesSet_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAEnumAllelesSet_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAEnumAllelesSet_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.GAUtilities_ESTest
+    [junit] Testsuite: 2.ga.GAUtilities_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAUtilities_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAUtilities_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.GAUtilities_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.GAUtilities_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.GAUtilities_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.GAUtilities_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.Genome_ESTest
+    [junit] Testsuite: 2.ga.Genome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.Genome_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.Genome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.Genome_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.Genome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.Genome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.Genome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.Population_ESTest
+    [junit] Testsuite: 2.ga.Population_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.Population_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.Population_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.Population_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.Population_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.Population_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.Population_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.RankSelector_ESTest
+    [junit] Testsuite: 2.ga.RankSelector_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.RankSelector_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.RankSelector_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.RankSelector_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.RankSelector_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.RankSelector_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.RankSelector_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.SectMutator_ESTest
+    [junit] Testsuite: 2.ga.SectMutator_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.SectMutator_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.SectMutator_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.SectMutator_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.SectMutator_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.SectMutator_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.SectMutator_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.UniformCrossover_ESTest
+    [junit] Testsuite: 2.ga.UniformCrossover_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.UniformCrossover_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.UniformCrossover_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.UniformCrossover_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.UniformCrossover_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.VectorAllelesGenome_ESTest
+    [junit] Testsuite: 2.ga.VectorAllelesGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.VectorAllelesGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.VectorAllelesGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.VectorGenome_ESTest
+    [junit] Testsuite: 2.ga.VectorGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.VectorGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 2.ga.VectorGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 2.ga.VectorGenome_ESTest_scaffolding
+    [junit] Testsuite: 2.ga.VectorGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 2.ga.VectorGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 2.ga.VectorGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD SUCCESSFUL
+Total time: 8 seconds
+Buildfile: /home/avini/Desktop/test/3_gaj/build.xml
+
+prepare:
+
+compile:
+
+compile-tests:
+    [mkdir] Created dir: /home/avini/Desktop/test/3_gaj/build/tests
+    [javac] /home/avini/Desktop/test/3_gaj/build.xml:89: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+
+evosuite-test:
+    [junit] Running 3.ga.GAAlgorithm_ESTest
+    [junit] Testsuite: 3.ga.GAAlgorithm_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAAlgorithm_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAAlgorithm_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAAlgorithm_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.GAEnumAllelesSet_ESTest
+    [junit] Testsuite: 3.ga.GAEnumAllelesSet_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAEnumAllelesSet_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAEnumAllelesSet_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAEnumAllelesSet_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.GAUtilities_ESTest
+    [junit] Testsuite: 3.ga.GAUtilities_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAUtilities_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAUtilities_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.GAUtilities_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.GAUtilities_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.GAUtilities_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.GAUtilities_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.Genome_ESTest
+    [junit] Testsuite: 3.ga.Genome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.Genome_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.Genome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.Genome_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.Genome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.Genome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.Genome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.Population_ESTest
+    [junit] Testsuite: 3.ga.Population_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.Population_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.Population_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.Population_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.Population_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.Population_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.Population_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.RankSelector_ESTest
+    [junit] Testsuite: 3.ga.RankSelector_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.RankSelector_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.RankSelector_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.RankSelector_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.RankSelector_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.RankSelector_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.RankSelector_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.SectMutator_ESTest
+    [junit] Testsuite: 3.ga.SectMutator_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.SectMutator_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.SectMutator_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.SectMutator_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.SectMutator_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.SectMutator_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.SectMutator_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.UniformCrossover_ESTest
+    [junit] Testsuite: 3.ga.UniformCrossover_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.UniformCrossover_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.UniformCrossover_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.UniformCrossover_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.UniformCrossover_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.UniformCrossover_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.VectorAllelesGenome_ESTest
+    [junit] Testsuite: 3.ga.VectorAllelesGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.VectorAllelesGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.VectorAllelesGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.VectorAllelesGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.VectorGenome_ESTest
+    [junit] Testsuite: 3.ga.VectorGenome_ESTest
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.VectorGenome_ESTest
+    [junit] java.lang.ClassNotFoundException: 3.ga.VectorGenome_ESTest
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+    [junit] Running 3.ga.VectorGenome_ESTest_scaffolding
+    [junit] Testsuite: 3.ga.VectorGenome_ESTest_scaffolding
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+    [junit] 
+    [junit] 	Caused an ERROR
+    [junit] 3.ga.VectorGenome_ESTest_scaffolding
+    [junit] java.lang.ClassNotFoundException: 3.ga.VectorGenome_ESTest_scaffolding
+    [junit] 	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+    [junit] 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+    [junit] 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+    [junit] 	at java.lang.Class.forName0(Native Method)
+    [junit] 	at java.lang.Class.forName(Class.java:264)
+    [junit] 
+
+BUILD SUCCESSFUL
+Total time: 26 seconds

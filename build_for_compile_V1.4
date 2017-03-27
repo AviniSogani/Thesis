@@ -1,0 +1,92 @@
+#!/bin/bash
+
+folder=$1
+where=$2
+
+echo $folder
+	
+cd $folder
+
+# If it has an ant script
+if [ -a ."/build.xml" ]; then
+     rm ."/build_backup.xml"
+     mv ."/build.xml" ."/build_backup.xml"
+     # Get length of build file
+     cat ."/build_backup.xml" | awk '
+	BEGIN {
+		printing=1		
+	}
+	/path/ {
+ 		if($0 !~ /refid/ && $0 ~ /evosuite.lib/){
+			printing=0;
+		}	
+	}
+	/\/path/ {
+		if(printing==0){
+			printing=1;
+			print "  <path id=\"evosuite.lib\">";
+			print "\t<fileset dir=\"${lib.dir}\">";
+			print "\t   <include name=\"**/evosuite*.jar\"/>";
+			print "\t</fileset>";
+			print "  </path>";
+			next;
+		}
+	}
+	{
+		if (printing==1) {
+			print $0;
+		}
+	}
+	' >> ."/build.xml"
+
+     # Add text from new file
+    # cat /home/avini/Desktop/temp.xml >> "build.xml"
+ echo "*****************"
+   if [ -a ."/build.xml" ]; then
+	echo "############" 
+	rm ."/build_backup.xml"
+	mv ."/build.xml" ."/build_backup.xml"
+	echo "^^^^^^^^^^^^^^^^^^"
+	cat ."/build_backup.xml" | awk '
+		BEGIN {
+			printing=1
+		}
+		/target/ {
+			split($0,parts," ");
+			for(part in parts){
+				if (parts[part] ~ /name/) {
+					split(parts[part],words,"=");
+					if (words[2]=="\"evosuite-test\"") {
+						pattern_found=1;
+					}	
+				}
+			}
+				
+		}
+		/path/ {
+			if ($0 ~ /refid/ && $0 ~ /test.lib/) {
+				if (pattern_found==1) {
+					print $0;
+					print "\t   <path refid=\"evosuite.lib\"/>";
+					next;
+				}
+			}
+		}
+		/fileset/ {
+			if ($0 ~ /dir/ && $0 ~/test.java/) {
+				if (pattern_found==1) {
+					print "\t   <fileset dir=\"${evosuite.java}\">";
+					next;
+				}
+			}
+		} 
+		{
+			if (printing==1) {
+				print $0;
+			}
+		}
+		' >> ."/build.xml"
+   fi
+fi
+echo "##########"
+cd $where

@@ -1,0 +1,47 @@
+#!/bin/bash
+
+#Set PATH to major's bin dir
+#export PATH="/home/avini/Desktop/major/bin:$PATH"
+
+# Main Test Folder
+folder=`ls $1 | grep -v '^lib' | grep -v '^backup'`
+where=$PWD
+#total_test=0
+#tests_in_current_file=0
+
+echo $folder
+
+# For each folder (project folder)
+for f in $folder; do
+	echo $f
+	
+#	if [ -a $1"/"$f"/src_backup" ]; then
+#		rm $1"/"$f"/src_backup" 
+#	cp -r $1"/"$f"/src" $1"/"$f"/src_backup"
+	
+	java_file=`find $1"/"$f"/evosuite-tests" -name '*.java'`
+	
+	for jf in $java_file; do     
+		echo $jf
+		tests_in_current_file=`cat $jf | grep '@Test' | wc -l`
+		total_test=`expr $total_test + $tests_in_current_file`;
+
+		
+	done
+
+	echo "**********************"
+	echo "Total Tests : $total_test"
+	echo "++++++++++++++++++++++"
+done
+
+
+# Go to project directory
+# Copy pom.xml to project directory & run script with test folder, you should be at Desktop
+# mvn compile (creates target directory)
+# avini@avini-VirtualBox:~/Desktop/test/1_tullibee$ java -jar ../../evosuite-1.0.3.jar -target target/classes -projectCP target/classes
+# mvn dependency:copy-dependencies
+# Copy evosuite-standalone-runtime-1.0.3.jar to current folder (project folder)
+# export CLASSPATH=target/classes:evosuite-standalone-runtime-1.0.3.jar:evosuite-tests:target/dependency/junit-4.12.jar:target/dependency/hamcrest-core-1.3.jar
+# ant compile-evosuite
+# 
+
