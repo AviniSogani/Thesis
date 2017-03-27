@@ -66,7 +66,7 @@ for f in $folder; do
 				rm -rf $1/$f/evosuite-tests/*
 
 				# Copy that test suite to evouite-tests folder to compile and run
-				cp -r $1/$f/test_suites/$ff_sb/$suite_no $1/$f/evosuite-tests
+				cp -r $1/$f/test_suites/$ff_sb/$suite_no/* $1/$f/evosuite-tests
 
 	 			# Compile and run tests
 				./compile_run_V1.1 $1/$f $where
