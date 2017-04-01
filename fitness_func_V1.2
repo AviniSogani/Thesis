@@ -3,8 +3,8 @@
 where=$PWD
 folder=`ls $1 | grep -v '^lib' | grep -v '^backup'`
 libFolder=$where/$1/lib
-budgets="120 600"
-fitnessFunctions="branch cbranch exception line method methodnoexception output weakmutation"
+budgets="120"
+fitnessFunctions="branch"
 
 # For each project folder
 for f in $folder; do
@@ -37,13 +37,13 @@ for f in $folder; do
 			fi
 
 			# Genearting 10 test suites for each ff and sb
-			for i in `seq 1 10`; do
+			for i in `seq 1 2`; do
 				echo "--"$i
 				# Generate tests
 				./generate_tests $1/$f $where $libFolder $fitness_fun $sb
 
 				# Move generated tests to proper test folder
-				mv $where/$1/$f/evosuite-tests/* $where/$1/$f/test_suites/$fitness_fun"_"$sb/$i/
+				mv $where/$1/$f/evosuite-tests $where/$1/$f/test_suites/$fitness_fun"_"$sb/$i
 			done
 		done
 
@@ -69,7 +69,7 @@ for f in $folder; do
 				cp -r $1/$f/test_suites/$ff_sb/$suite_no/* $1/$f/evosuite-tests
 
 	 			# Compile and run tests
-				./compile_run_V1.1 $1/$f $where
+				./compile_run_V1.1 $1/$f $where $suite_no
 	
 			 	# Create csv for every search budget, fitness func, test suite, mutant
 			 	./create_csv $1/$f $where $search_budget $fitness_fun $suite_no

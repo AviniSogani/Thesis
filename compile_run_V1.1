@@ -2,6 +2,7 @@
 
 folder=$1
 where=$2
+suite_no=$3
 mutant=`ls $folder"/mutants"`
 
 echo $folder
@@ -20,6 +21,7 @@ ant compile
 ant compile-evosuite
 
 mkdir output
+mkdir output/$suite_no
 
 # mutant# = `ls -l mutants | grep ^d | wc -l`
 
@@ -53,7 +55,7 @@ for mut in $mutant; do
 	ant clean
 	ant compile
 	ant compile-evosuite
-	ant evosuite-test >> ./output/output$mut.txt
+	ant evosuite-test >> ./output/$suite_no/output$mut.txt
 
 	# move mutant file back to its location
 	rm $mut_file_path
