@@ -2,10 +2,11 @@
 
 folder=$1
 where=$2
-output=`ls $folder"/output"`
 search_budget=$3
 fitnessFunc=$4
 suite_no=$5
+
+output=`ls $folder"/output"`
 
 echo $folder
 
@@ -13,7 +14,7 @@ echo $folder
 cd $folder"/output"
 
 # count total no. of tests
-java_file=`find .."/evosuite-tests" -name '*.java'`
+java_file=`find .."/evosuite-tests" -name '*.java' | grep -v "scaffolding"`
 	
 for jf in $java_file; do     
 #	echo $jf
@@ -24,7 +25,11 @@ done
 echo "******************************"
 
 # find the summary of tests
-for file in $output; do
+for $suite in $output; do
+   
+   output_file=`ls ./$suite`
+
+   for file in $output_file; do
 
 	mut=`echo $file | grep -o -E '[0-9]+'`;
 	
