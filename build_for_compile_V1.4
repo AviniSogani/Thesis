@@ -38,6 +38,8 @@ if [ -a ."/build.xml" ]; then
 		}
 	}
 	' >> ."/build.xml"
+fi
+
 
      # Add text from new file
     # cat /home/avini/Desktop/temp.xml >> "build.xml"
@@ -72,14 +74,14 @@ if [ -a ."/build.xml" ]; then
 				}
 			}
 		}
-		/fileset/ {
-			if ($0 ~ /dir/ && $0 ~/test.java/) {
-				if (pattern_found==1) {
-					print "\t   <fileset dir=\"${evosuite.java}\">";
-					next;
-				}
-			}
-		} 
+		#/fileset/ {
+		#	if ($0 ~ /dir/ && $0 ~/test.java/) {
+		#		if (pattern_found==1) {
+		#			print "\t   <fileset dir=\"${evosuite.java}\">";
+		#			next;
+		#		}
+		#	}
+		#} 
 		{
 			if (printing==1) {
 				print $0;
@@ -87,6 +89,64 @@ if [ -a ."/build.xml" ]; then
 		}
 		' >> ."/build.xml"
    fi
-fi
+
+
+
+
+
+echo "*****************"
+   if [ -a ."/build.xml" ]; then
+	echo "############" 
+	rm ."/build_backup.xml"
+	mv ."/build.xml" ."/build_backup.xml"
+	echo "^^^^^^^^^^^^^^^^^^"
+	cat ."/build_backup.xml" | awk '
+		BEGIN {
+			printing=1
+		}
+		/target/ {
+			split($0,parts," ");
+			for(part in parts){
+				if (parts[part] ~ /name/) {
+					split(parts[part],words,"=");
+					if (words[2]=="\"evosuite-test\"") {
+						pattern_found=1;
+					}	
+				}
+			}
+				
+		}
+		
+		/fileset/ {
+			if ($0 ~ /dir/ && $0 ~/test.java/) {
+				if (pattern_found==1) {
+					print "\t   <fileset dir=\"${build.evosuite}\">";
+					next;
+				}
+			}
+		}
+		/include/ {
+			if ($0 ~ /*.java/) {
+				if (pattern_found==1) {
+					print "\t   <include name=\"\*\*\/\*ESTest.class\"\/>";
+					next;
+				}
+			}
+
+		}
+		{
+			if (printing==1) {
+				print $0;
+			}
+		}
+		' >> ."/build.xml"
+   fi
+
+
+
+
+
+
+
 echo "##########"
 cd $where
