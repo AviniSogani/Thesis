@@ -4,7 +4,7 @@ where=$PWD
 folder=`ls $1 | grep -v '^lib' | grep -v '^backup'`
 libFolder=$where/$1/lib
 budgets="120"
-fitnessFunctions="branch"
+fitnessFunctions="branch cbranch"
 
 # For each project folder
 for f in $folder; do
@@ -56,7 +56,7 @@ for f in $folder; do
 			# Get all 10 test suites
 			test_suite_no=`ls $1/$f/test_suites/$ff_sb`
 
-			# Extract the sb fro the folder name to send it to create csv script
+			# Extract the sb from the folder name to send it to create csv script
 			search_budget=`echo $ff_sb | awk -F'_' '{print $2}'`
 
 			# For each test suite
@@ -69,7 +69,7 @@ for f in $folder; do
 				cp -r $1/$f/test_suites/$ff_sb/$suite_no/* $1/$f/evosuite-tests
 
 	 			# Compile and run tests
-				./compile_run_V1.1 $1/$f $where $suite_no
+				./compile_run_V1.1 $1/$f $where $search_budget $fitness_fun $suite_no
 	
 			 	# Create csv for every search budget, fitness func, test suite, mutant
 			 	./create_csv $1/$f $where $search_budget $fitness_fun $suite_no

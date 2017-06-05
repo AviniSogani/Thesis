@@ -6,7 +6,7 @@ search_budget=$3
 fitnessFunc=$4
 suite_no=$5
 
-output=`ls $folder"/output"`
+output=`ls $folder"/output/"$fitnessFunc/$search_budget`
 
 echo $folder
 
@@ -27,14 +27,15 @@ echo "******************************"
 # find the summary of tests
 for suite in $output; do
    
-   output_file=`ls ./$suite | grep -v "fileList"`;
+   output_file=`ls ./$fitnessFunc/$search_budget/$suite | grep -v "fileList"`;
 
    for file in $output_file; do
 
 	mut=`echo $file | grep -o -E '[0-9]+'`;
 	
-	cat $suite/$file | awk -v tot_tests=$total_test -v mut_no=$mut -v budget=$search_budget -v fitness_func=$fitnessFunc -v project=`pwd | awk -F'/' '{print $6}'` -v suite_id=$suite_no -v F=fileList '
+	cat $fitnessFunc/$search_budget/$suite/$file | awk -v tot_tests=$total_test -v mut_no=$mut -v budget=$search_budget -v fitness_func=$fitnessFunc -v project=`pwd | awk -F'/' '{print $6}'` -v suite_id=$suite_no -v F=fileList '
 	   BEGIN {
+		OFS=","
 		tests_run=0
 		tot_fail=0
 		tot_errors=0
