@@ -26,11 +26,9 @@ echo "******************************"
 
 # find the summary of tests
 for suite in $output; do
-   
    output_file=`ls ./$fitnessFunc/$search_budget/$suite | grep -v "fileList"`;
 
    for file in $output_file; do
-
 	mut=`echo $file | grep -o -E '[0-9]+'`;
 	
 	cat $fitnessFunc/$search_budget/$suite/$file | awk -v tot_tests=$total_test -v mut_no=$mut -v budget=$search_budget -v fitness_func=$fitnessFunc -v project=`pwd | awk -F'/' '{print $6}'` -v suite_id=$suite_no -v F=fileList '
