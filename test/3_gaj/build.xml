@@ -161,22 +161,10 @@
 	   <path refid="evosuite.lib"/>
 	   <path refid="evosuite.lib"/>
 	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
-	   <path refid="evosuite.lib"/>
         </classpath>
         <batchtest fork="yes">
-	   <fileset dir="${evosuite.java}">
-             <include name="**/*.java"/>
+	   <fileset dir="${build.evosuite}">
+	   <include name="**/*ESTest.class"/>
            </fileset>
         </batchtest>
      </junit>

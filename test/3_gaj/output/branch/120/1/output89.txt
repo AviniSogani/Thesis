@@ -1,0 +1,18 @@
+Buildfile: /home/avini/Desktop/test/3_gaj/build.xml
+
+prepare:
+
+compile:
+    [javac] Compiling 14 source files to /home/avini/Desktop/test/3_gaj/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] warning: /usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Object.class): major version 52 is newer than 51, the highest major version supported by this compiler.
+    [javac]   It is recommended that the compiler be upgraded.
+    [javac] /usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/Object.class): warning: Cannot find annotation method 'value()' in type 'Profile+Annotation': class file for jdk.Profile+Annotation not found
+    [javac] warning: /usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/String.class): major version 52 is newer than 51, the highest major version supported by this compiler.
+    [javac]   It is recommended that the compiler be upgraded.
+    [javac] /usr/lib/jvm/java-8-oracle/lib/ct.sym(META-INF/sym/rt.jar/java/lang/String.class): warning: Cannot find annotation method 'value()' in type 'Profile+Annotation'
+    [javac] /home/avini/Desktop/test/3_gaj/src/main/java/brain/ga/GAUtilities.java:22: error: ';' expected
+    [javac] 		return i--1;
+    [javac] 		          ^
+    [javac] 1 error
+    [javac] 5 warnings
